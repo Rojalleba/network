@@ -1,0 +1,6 @@
+# Load the model from the saved file
+loaded_model = joblib.load(save_path)
+
+# Use it to predict anomalies
+predictions = loaded_model.predict(data)
+# returns 1 for normal, -1 for anomaly
